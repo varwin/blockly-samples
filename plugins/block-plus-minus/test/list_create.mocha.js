@@ -145,7 +145,7 @@ suite('List create block', function () {
         xml: '<block type="lists_create_with"/>',
         expectedXml:
           '<block xmlns="https://developers.google.com/blockly/xml" ' +
-          'type="lists_create_with" id="1">\n' +
+          'type="lists_create_with" id="1" module="general">\n' +
           '  <mutation items="3"></mutation>\n' +
           '</block>',
         assertBlockStructure: (block) => {
@@ -156,7 +156,7 @@ suite('List create block', function () {
         title: '3 items',
         xml:
           '<block xmlns="https://developers.google.com/blockly/xml" ' +
-          'type="lists_create_with" id="1">\n' +
+          'type="lists_create_with" id="1" module="general">\n' +
           '  <mutation items="3"></mutation>\n' +
           '</block>',
         assertBlockStructure: (block) => {
@@ -167,7 +167,7 @@ suite('List create block', function () {
         title: '5 items',
         xml:
           '<block xmlns="https://developers.google.com/blockly/xml" ' +
-          'type="lists_create_with" id="1">\n' +
+          'type="lists_create_with" id="1" module="general">\n' +
           '  <mutation items="5"></mutation>\n' +
           '</block>',
         assertBlockStructure: (block) => {
@@ -178,7 +178,7 @@ suite('List create block', function () {
         title: '0 items',
         xml:
           '<block xmlns="https://developers.google.com/blockly/xml" ' +
-          'type="lists_create_with" id="1">\n' +
+          'type="lists_create_with" id="1" module="general">\n' +
           '  <mutation items="0"></mutation>\n' +
           '</block>',
         assertBlockStructure: (block) => {
@@ -189,10 +189,10 @@ suite('List create block', function () {
         title: '4 items with child attached',
         xml:
           '<block xmlns="https://developers.google.com/blockly/xml" ' +
-          'type="lists_create_with" id="1">\n' +
+          'type="lists_create_with" id="1" module="general">\n' +
           '  <mutation items="4"></mutation>\n' +
           '  <value name="ADD3">\n' +
-          '    <block type="logic_boolean" id="1">\n' +
+          '    <block type="logic_boolean" id="1" module="general">\n' +
           '      <field name="BOOL">FALSE</field>\n' +
           '    </block>\n' +
           '  </value>\n' +

@@ -24,6 +24,7 @@ Blockly.defineBlocksWithJsonArray([
     type: 'procedures_defnoreturn',
     message0: '%{BKY_PROCEDURES_DEFNORETURN_TITLE} %1 %2',
     message1: '%{BKY_PROCEDURES_DEFNORETURN_DO} %1',
+    obsolete: true,
     args0: [
       {
         type: 'field_input',
@@ -57,6 +58,7 @@ Blockly.defineBlocksWithJsonArray([
     message0: '%{BKY_PROCEDURES_DEFRETURN_TITLE} %1 %2',
     message1: '%{BKY_PROCEDURES_DEFRETURN_DO} %1',
     message2: '%{BKY_PROCEDURES_DEFRETURN_RETURN} %1',
+    obsolete: true,
     args0: [
       {
         type: 'field_input',

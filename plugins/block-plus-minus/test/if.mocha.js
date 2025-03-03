@@ -144,7 +144,7 @@ suite('If block', function () {
         xml: '<block type="controls_if"/>',
         expectedXml:
           '<block xmlns="https://developers.google.com/blockly/xml" ' +
-          'type="controls_if" id="1"></block>',
+          'type="controls_if" id="1" module="general"></block>',
         assertBlockStructure: (block) => {
           assertIfBlockStructure(block, 1);
         },
@@ -153,7 +153,7 @@ suite('If block', function () {
         title: '2 elseif no else',
         xml:
           '<block xmlns="https://developers.google.com/blockly/xml" ' +
-          'type="controls_if" id="1">\n' +
+          'type="controls_if" id="1" module="general">\n' +
           '  <mutation elseif="2"></mutation>\n' +
           '</block>',
         assertBlockStructure: (block) => {
@@ -164,7 +164,7 @@ suite('If block', function () {
         title: '3 elseif with else',
         xml:
           '<block xmlns="https://developers.google.com/blockly/xml" ' +
-          'type="controls_if" id="1">\n' +
+          'type="controls_if" id="1" module="general">\n' +
           '  <mutation elseif="3" else="1"></mutation>\n' +
           '</block>',
         assertBlockStructure: (block) => {

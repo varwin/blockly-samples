@@ -146,7 +146,7 @@ suite('Text join block', function () {
         xml: '<block type="text_join"/>',
         expectedXml:
           '<block xmlns="https://developers.google.com/blockly/xml" ' +
-          'type="text_join" id="1">\n' +
+          'type="text_join" id="1" module="general">\n' +
           '  <mutation items="2"></mutation>\n' +
           '</block>',
         assertBlockStructure: (block) => {
@@ -157,7 +157,7 @@ suite('Text join block', function () {
         title: '0 items',
         xml:
           '<block xmlns="https://developers.google.com/blockly/xml" ' +
-          'type="text_join" id="1">\n' +
+          'type="text_join" id="1" module="general">\n' +
           '  <mutation items="0"></mutation>\n' +
           '</block>',
         assertBlockStructure: (block) => {
@@ -168,7 +168,7 @@ suite('Text join block', function () {
         title: '3 items',
         xml:
           '<block xmlns="https://developers.google.com/blockly/xml" ' +
-          'type="text_join" id="1">\n' +
+          'type="text_join" id="1" module="general">\n' +
           '  <mutation items="3"></mutation>\n' +
           '</block>',
         assertBlockStructure: (block) => {
@@ -179,10 +179,10 @@ suite('Text join block', function () {
         title: '3 items with child attached',
         xml:
           '<block xmlns="https://developers.google.com/blockly/xml" ' +
-          'type="text_join" id="1">\n' +
+          'type="text_join" id="1" module="general">\n' +
           '  <mutation items="3"></mutation>\n' +
           '  <value name="ADD2">\n' +
-          '    <block type="logic_boolean" id="1">\n' +
+          '    <block type="logic_boolean" id="1" module="general">\n' +
           '      <field name="BOOL">FALSE</field>\n' +
           '    </block>\n' +
           '  </value>\n' +

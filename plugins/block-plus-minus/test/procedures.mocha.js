@@ -208,7 +208,7 @@ suite('Procedure blocks', function () {
               '<block xmlns="https://developers.google.com/blockly/xml" ' +
               'type="' +
               testSuite.defType +
-              '" id="1">\n' +
+              '" id="1" module="general">\n' +
               '  <field name="NAME"></field>\n' +
               '</block>',
             assertBlockStructure: (block) => {
@@ -227,7 +227,7 @@ suite('Procedure blocks', function () {
               '<block xmlns="https://developers.google.com/blockly/xml" ' +
               'type="' +
               testSuite.defType +
-              '" id="1">\n' +
+              '" id="1" module="general">\n' +
               '  <field name="NAME">do something</field>\n' +
               '</block>',
             assertBlockStructure: (block) => {
@@ -250,7 +250,7 @@ suite('Procedure blocks', function () {
               '<block xmlns="https://developers.google.com/blockly/xml" ' +
               'type="' +
               testSuite.defType +
-              '" id="1">\n' +
+              '" id="1" module="general">\n' +
               '  <mutation>\n' +
               '    <arg name="x" varid="arg1" argid="1"></arg>\n' +
               '    <arg name="y" varid="arg2" argid="1"></arg>\n' +
@@ -272,7 +272,7 @@ suite('Procedure blocks', function () {
               '</block>',
             expectedXml:
               '<block xmlns="https://developers.google.com/blockly/xml" ' +
-              'type="procedures_defreturn" id="1">\n' +
+              'type="procedures_defreturn" id="1" module="general">\n' +
               '  <mutation statements="false"></mutation>\n' +
               '  <field name="NAME">do something</field>\n' +
               '</block>',
@@ -287,7 +287,7 @@ suite('Procedure blocks', function () {
               '<block xmlns="https://developers.google.com/blockly/xml" ' +
               'type="' +
               testSuite.callType +
-              '" id="1">\n' +
+              '" id="1" module="general">\n' +
               '  <mutation name=""></mutation>\n' +
               '</block>',
             assertBlockStructure: (block) => {
@@ -306,7 +306,7 @@ suite('Procedure blocks', function () {
               '<block xmlns="https://developers.google.com/blockly/xml" ' +
               'type="' +
               testSuite.callType +
-              '" id="1">\n' +
+              '" id="1" module="general">\n' +
               '  <mutation name="do something"></mutation>\n' +
               '</block>',
             assertBlockStructure: (block) => {
@@ -328,7 +328,7 @@ suite('Procedure blocks', function () {
               '<block xmlns="https://developers.google.com/blockly/xml" ' +
               'type="' +
               testSuite.callType +
-              '" id="1">\n' +
+              '" id="1" module="general">\n' +
               '  <mutation name="do something">\n' +
               '    <arg name="x"></arg>\n' +
               '    <arg name="y"></arg>\n' +

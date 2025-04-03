@@ -1,5 +1,5 @@
 {
-  "name": "@varwin-blockly/block-plus-minus",
+  "name": "@varwin/block-plus-minus",
   "version": "8.0.14",
   "description": "A group of blocks that replace the built-in mutator UI with a +/- based UI.",
   "scripts": {
@@ -50,7 +50,7 @@
   },
   "publishConfig": {
     "access": "public",
-    "registry": "https://wombat-dressing-room.appspot.com"
+    "registry": "https://registry.npmjs.org/"
   },
   "engines": {
     "node": ">=8.17.0"
